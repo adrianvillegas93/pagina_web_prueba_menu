@@ -1,0 +1,458 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+:root{
+    --color-title: #001A49;
+    scroll-behavior: smooth;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 30px 20px;
+    z-index: 10;
+    /* background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E"); */
+
+    /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+
+    /* background-image: linear-gradient(to top, #09203f 0%, #537895 100%); */
+
+    /* background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); */
+
+    background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
+
+}
+
+header.abajo{
+    background: #fff;
+    padding: 15px 20px;
+}
+
+header .logo{
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    transition: 1.5s;
+    /* width: 10%; */ 
+}
+
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+}
+
+
+header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s;
+}
+
+.zona1{
+    display: grid;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/thelast.jpg);
+    background-size: cover;  /*Para que no se repita o duplique la imagen*/
+    background-position: center center;
+    place-items: center;
+
+    /* justify-content: center; Esta es otra forma de centrar el texto dentro de Zona 1
+    align-items: center; */
+}
+
+/*Esta parte es parte es para centrar los elementos*/
+.zona1_container{
+    display: grid;
+    place-items: center;
+    /* align-self: center;
+    justify-self: center; */
+    /* place-self: center; */
+}
+
+
+
+.zona_titulo{
+    color: #fff;
+    font-size: 2.5rem;
+
+}
+
+.zona_subtitulo{
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+header.abajo .logo, header.abajo ul li a{
+    color: #000;
+}
+
+/*Segguimos con la parte de Nosotros*/
+
+.nosotros{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+.nosotros_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em; /*Separacion entre los 2 elementos (imagen y texto)*/
+    align-items: center;
+    padding-top: 50px;
+    margin-bottom: 20px;
+}
+
+.nosotros_pciture{
+    max-width: 500px;
+}
+
+.nosotros_titulo{
+    text-align: center;
+    font-size: 2.4rem;
+    color: var(--color-title);
+}
+
+.nosotros_parrafo{
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.nosotros_img{
+    width: 90%;
+    padding: 2px;
+    display: block;
+    border: 5px solid rgb(25, 61, 128);
+}
+
+.nosotros_subtitulo{
+    padding-bottom: 10px;
+}
+
+.boton{
+    display: grid;
+    place-items: center;
+    margin-top: 35px;
+}
+
+.cta{
+    /* color: #fff;
+    width: 15%;
+    background-color: rgb(64, 58, 146);
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+
+    /*Para un boton es mejor usar el display inline-blocj, y justify-self para centrarlo asi mismo*/
+
+    display: inline-block;
+    background-color: rgb(64, 58, 146);
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 15px;
+    
+}
+
+
+/*Linea, es solo una linea centrada, puede verse mejor en el footer*/
+/* .line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background-color: #000;
+    margin-top: 60px;
+    margin-bottom: 60px;
+} */
+
+
+
+
+
+/* .contenedor
+    width: 95%;
+    max-width: 1000px;
+    margin: auto; /*Para centrar todo*/
+/*
+
+
+/*Sigue la parte de servicios*/
+
+.servicio{
+    margin-top: 50px;
+    background-color: #e5e5f7;
+}
+
+.contenedor_servicio{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    
+}
+
+.servicio_titulo{
+    text-align: center;
+    font-size: 2.4rem;
+    color: var(--color-title);
+    padding-top: 25px;
+}
+
+.contenedor_servicio img{
+    width: 40%;
+}
+
+.checklist_servicio{
+    width: 45%;
+}
+
+.n-service{
+    margin-bottom: 20px;
+    color: #000;
+}
+
+
+.gallery{
+    margin-top: 20px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+.gallery_contenedor{
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.contenedor_galeria{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.gallery_titulo{
+    text-align: center;
+    font-size: 2.4rem;
+    color: var(--color-title);
+    padding-bottom: 30px;
+}
+
+.img_galeria{
+    object-fit: cover;
+    width: 30%;
+    display: block;
+    margin-bottom: 15px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.imagen_light{
+    position: fixed;
+    background: rgb(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.show{
+    transform: translate(0);
+}
+
+.agregar_imagen{
+    object-fit: cover;
+    width: 60%;
+    border-radius: 10px;
+    transform: scale(0);
+    transition: transform .3s .2s;
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+.close{
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    width: 40px;
+    cursor: pointer;
+}
+
+
+/*Sigue la ultima parte (footer)*/
+
+footer{
+    /* background: #000; */
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+
+    padding-bottom: 0.1px;
+}
+
+.footer_content{
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.contact_us{
+    width: 40%;
+    color: #fff;
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.brand+p{
+    font-weight: 500;
+}
+
+.social_media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social_media_icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social_media_icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+}
+
+.social_media_icon:hover{
+    background: #fff;
+    color: #514ba2;
+}
+
+
+
+/*Esto es una prueba de una tarjeta con animacion*/
+
+/* .tarjeta{
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.card{
+    display: grid;
+    place-items: center;
+    position: relative;
+    height: 150px;
+    width: 100px;
+    background-color: #191919;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card::before{
+    content: '';
+    width: 60px;
+    height: 300px;
+    left: 10px;
+    top: -70px;
+    position: absolute;
+    background: linear-gradient(#ffef0f, #b400fb);
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.card::after{
+    content: '';
+    position: absolute;
+    background-color: #191919;
+    inset: 3px;
+    border-radius: 5px;
+} */
+
+
